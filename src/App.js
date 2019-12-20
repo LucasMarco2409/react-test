@@ -2,20 +2,18 @@ import React from 'react';
 import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaw } from '@fortawesome/free-solid-svg-icons'
 import Navigation from './components/navigation';
 import Jumbotron from './components/jumbotron';
-
 function App() {
   return (
     <div className="App">
-      <Navigation/>
+      <Navigation />
       <header className="App-header">
-        <div className="container">
-          <div className="row">
-        <Jumbotron/>
-        <Jumbotron/>
-        <Jumbotron/>
+        <Jumbotron />
         <i className="fa fa-paw"></i>
+        <FontAwesomeIcon icon={faPaw} />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -28,11 +26,10 @@ function App() {
         >
           Learn React
         </a>
-        </div>
-        </div>
       </header>
+      <div className="container">
+      </div>
     </div>
   );
 }
-
 export default App;
