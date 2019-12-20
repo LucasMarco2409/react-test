@@ -1,5 +1,7 @@
 import React from 'react';
 import { Jumbotron, Button } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaw } from '@fortawesome/free-solid-svg-icons';
 
 const Example = (props) => {
   return (
@@ -10,7 +12,7 @@ const Example = (props) => {
         <hr className="my-2" />
         <p>Man kann verschiedene Text und Schriftarten nutzen.</p>
         <p className="lead">
-          <Button color="primary">Pawfect</Button>
+          <FontAwesomeIcon icon={faPaw} /><Button color="primary">Pawfect</Button>
         </p>
       </Jumbotron>
       </div>

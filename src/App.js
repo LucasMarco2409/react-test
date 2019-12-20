@@ -2,8 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaw } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaw } from '@fortawesome/free-solid-svg-icons';
 import Navigation from './components/navigation';
 import Jumbotron from './components/jumbotron';
 function App() {
@@ -11,8 +11,11 @@ function App() {
     <div className="App">
       <Navigation />
       <header className="App-header">
+      <div className="container">
+        <div className="row">
         <Jumbotron />
-        <i className="fa fa-paw"></i>
+        <Jumbotron />
+        <Jumbotron />
         <FontAwesomeIcon icon={faPaw} />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -26,6 +29,8 @@ function App() {
         >
           Learn React
         </a>
+        </div>
+        </div>
       </header>
       <div className="container">
       </div>
