@@ -3,7 +3,6 @@ import { Jumbotron, Button } from 'reactstrap';
 
 const Example = (props) => {
   return (
-    <div className="row">
       <div className="col">
       <Jumbotron>
         <h1 className="display-3">TEXT TEXT TEXT</h1>
@@ -15,7 +14,6 @@ const Example = (props) => {
         </p>
       </Jumbotron>
       </div>
-    </div>
   );
 };
 

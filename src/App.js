@@ -10,6 +10,10 @@ function App() {
     <div className="App">
       <Navigation/>
       <header className="App-header">
+        <div className="container">
+          <div className="row">
+        <Jumbotron/>
+        <Jumbotron/>
         <Jumbotron/>
         <i className="fa fa-paw"></i>
         <img src={logo} className="App-logo" alt="logo" />
@@ -24,11 +28,9 @@ function App() {
         >
           Learn React
         </a>
+        </div>
+        </div>
       </header>
-
-      <div className="container">
-
-      </div>
     </div>
   );
 }
