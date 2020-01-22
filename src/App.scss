@@ -46,6 +46,10 @@ $color-navigation: hsl(10%, 80%, 80%);
   background-color: $color-navigation;
 }
 
+.card-body {
+  background-color: $color-navigation;
+}
+
 .fas.fa-paw{
   height: 30px;
   width: 30px;
@@ -53,16 +57,7 @@ $color-navigation: hsl(10%, 80%, 80%);
 
 .btn.btn-primary {
   background-color: $color-blue;
-  border-color: &$color-blue;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-
-
+  border-color: $color-blue;
+  font-family: fantasy;
+  color: $color-navigation;
 }

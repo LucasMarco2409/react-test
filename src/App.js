@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaw } from '@fortawesome/free-solid-svg-icons';
 import Navigation from './components/navigation';
 import Jumbotron from './components/jumbotron';
+import Card from './components/card';
+import Toasts from './components/toasts';
+import FlushList from './components/flushlist';
 function App() {
   return (
     <div className="App">
@@ -16,24 +16,29 @@ function App() {
         <Jumbotron />
         <Jumbotron />
         <Jumbotron />
-        <FontAwesomeIcon icon={faPaw} />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        </div>
+        <div className="row">
+          <div className="col">
+          <Card/>
+          </div>
+          <div className="col">
+          <Card/>
+          </div>
+          <div className="col">
+          <Card/>
+          </div>
+        </div>
+        </div>
+
+        <div className="row">
+          <div className="col">
+          <Toasts/>
+        </div>
+        <div className="col">
+        <FlushList/>
         </div>
         </div>
       </header>
-      <div className="container">
-      </div>
     </div>
   );
 }

@@ -12,7 +12,7 @@ const Example = (props) => {
         <hr className="my-2" />
         <p>Man kann verschiedene Text und Schriftarten nutzen.</p>
         <p className="lead">
-          <FontAwesomeIcon icon={faPaw} /><Button color="primary">Pawfect</Button>
+        <Button color="primary"><FontAwesomeIcon icon={faPaw} />PAWFECT</Button>
         </p>
       </Jumbotron>
       </div>

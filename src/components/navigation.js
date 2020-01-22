@@ -13,7 +13,7 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
-import logo from './img/cat-694730_1920.jpg';
+import logo from './img/cat1.jpg';
 
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
